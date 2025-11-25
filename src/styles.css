@@ -118,3 +118,73 @@ footer {
 hr {
   display: none; /* Hide the default ugly horizontal rule */
 }
+
+/* --- NEW STYLES FOR HOBBIES GRID --- */
+.hobbies-grid {
+  display: grid;
+  /* This automatically arranges cards: 1 column on mobile, 3 on PC */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.hobby-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px); /* Moves card up slightly when hovered */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hobby-icon {
+  font-size: 3rem; /* Makes the emoji big */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* --- NEW STYLES FOR CONTACT PAGE --- */
+.clean-list {
+  list-style: none; /* Removes the bullet points */
+  padding: 0;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto; /* Centers the text block */
+}
+
+.clean-list li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.clean-list li:last-child {
+  border-bottom: none;
+}
+
+.clean-list strong {
+  color: #007bff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 5px;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #218838;
+}
