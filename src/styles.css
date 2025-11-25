@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+/* 1. Import a beautiful font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 2. General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  background-color: #f0f2f5; /* Soft grey background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3. Layout Container */
+/* This keeps your content centered and not too wide */
+main, header, nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* 4. Navigation Bar (in app.component.html) */
+nav {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: white;
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: inline-block; /* Fits the width of content */
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active-link {
+  background-color: #007bff; /* Blue accent */
+  color: white;
+}
+
+/* 5. Profile Photo */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; /* Ensures photo doesn't stretch */
+  border-radius: 50%; /* Makes it round */
+  border: 5px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Nice shadow */
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* 6. Headings */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* 7. Cards (Sections) */
+section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: left; /* Keep content readable */
+}
+
+/* 8. Lists (Skills and Education) */
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.skills-list li {
+  background: #eef4ff;
+  display: inline-block;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #0056b3;
+  font-weight: 500;
+}
+
+/* 9. Footer */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+hr {
+  display: none; /* Hide the default ugly horizontal rule */
+}
